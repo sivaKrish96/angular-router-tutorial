@@ -1,1 +1,28 @@
 <h1>Angular Router Tutorial</h1>
+<ul>
+    <li>
+        <!-- Here we are using the property binding [routerLink]="['']" with array of values -->
+        <a [routerLink]="['']">Home</a>
+    </li>
+    <li>
+        <a [routerLink]="['about']">About</a>
+    </li>
+    <li>
+        <a [routerLink]="['contact-us']">Contact Us</a>
+    </li>
+    <br>
+    <li>
+        <!-- Here we are using the attribute routerLink="/" with array of values -->
+        <a routerLink="/">Home</a>
+    </li>
+    <li>
+        <a routerLink="/about">About</a>
+    </li>
+    <li>
+        <a routerLink="/contact-us">Contact Us</a>
+    </li>
+    <li>
+        <a routerLink="/details">Details</a>
+    </li>
+</ul>
+<router-outlet></router-outlet>
